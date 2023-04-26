@@ -1,11 +1,19 @@
-## My Project
+# amazon-chime-sdk-ios-spm
+# Swift Package Manager support for Amazon Chime SDK for iOS
 
-TODO: Fill this README out!
+This repository enables Swift Package Manager support for the [Amazon Chime Mobile SDK for iOS](https://github.com/aws/amazon-chime-sdk-ios) by vending a Manifest file (`Package.swift`) that links to binary targets for the SDKs.
 
-Be sure to:
+## Adding Amazon Chime SDK iOS via Swift Package Manager
 
-* Change the title in this README
-* Edit your repository description on GitHub
+1. Open your project in Xcode
+
+2. Go to **File** > **Swift Packages** > **Add Package Dependency...**
+
+3. In the field **Enter package repository URL**, enter "https://github.com/aws/amazon-chime-sdk-ios-spm"
+
+4. Pick the latest version and click **Next**.
+
+5. Choose the packages required for your project and click **Finish**
 
 ## Security
 
