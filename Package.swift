@@ -1,14 +1,16 @@
 // swift-tools-version: 5.6
 import PackageDescription
 
-// Current stable version of the Amazon Chime iOS SDK
+// Current stable version of the Amazon Chime SDK for iOS
 let SDKVersion = "0.23.0"
 let SDKMediaVersion = "0.18.0"
 let SDKMachineLearningVersion = "0.2.0"
 
+// TODO: Update url during the first release
 // Hosting url where the release artifacts are hosted.
 let hostingUrl = "<TBD>"
 
+// TODO: Update checksums during the first release
 // Checksums for SDKs to verify that the hosted archive file matches the archive declared in the manifest file.
 let SDKChecksum = "SHA256_CHECKSUM_PLACEHOLDER"
 let SDKMediaChecksum = "SHA256_CHECKSUM_PLACEHOLDER"
