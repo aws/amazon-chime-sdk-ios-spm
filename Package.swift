@@ -36,7 +36,7 @@ let package = Package(
         .binaryTarget(
             name: "AmazonChimeSDKMediaNoVideoCodecs",
             url: "\(hostingUrl)/media-no-video-codecs-without-bitcode/\(SDKMediaVersion)/spm/AmazonChimeSDKMediaNoVideoCodecs-\(SDKMediaVersion).zip",
-            checksum: SDKMediaChecksum
+            checksum: SDKMediaNoVideoCodecsChecksum
         ),
         .binaryTarget(
             name: "AmazonChimeSDKMachineLearning",
