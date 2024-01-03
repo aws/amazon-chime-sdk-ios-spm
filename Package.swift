@@ -12,6 +12,7 @@ let hostingUrl = "https://amazon-chime-sdk-ios.s3.amazonaws.com"
 // Checksums for SDKs to verify that the hosted archive file matches the archive declared in the manifest file.
 let SDKChecksum = "bc4193855ec5b96732846b27954573ee4b9ec497f930e9a678125ee5b3a8f49a"
 let SDKMediaChecksum = "03751799d43c5325524f9056057530f25da4ccdc6d712acb24f556471f0e939a"
+let SDKMediaNoVideoCodecsChecksum = "03751799d43c5325524f9056057530f25da4ccdc6d712acb24f556471f0e939a"
 let SDKMachineLearningChecksum = "d79e15d11b24ee53219a0c02963e60c4b56cd2f4d121bf8d40c3fe3068a14a9d"
 
 let package = Package(
@@ -30,6 +31,11 @@ let package = Package(
         .binaryTarget(
             name: "AmazonChimeSDKMedia",
             url: "\(hostingUrl)/media-without-bitcode/\(SDKMediaVersion)/spm/AmazonChimeSDKMedia-\(SDKMediaVersion).zip",
+            checksum: SDKMediaChecksum
+        ),
+        .binaryTarget(
+            name: "AmazonChimeSDKMediaNoVideoCodecs",
+            url: "\(hostingUrl)/media-no-video-codecs-without-bitcode/\(SDKMediaVersion)/spm/AmazonChimeSDKMediaNoVideoCodecs-\(SDKMediaVersion).zip",
             checksum: SDKMediaChecksum
         ),
         .binaryTarget(
