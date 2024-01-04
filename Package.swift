@@ -11,7 +11,7 @@ let hostingUrl = "https://amazon-chime-sdk-ios.s3.amazonaws.com"
 
 // Checksums for SDKs to verify that the hosted archive file matches the archive declared in the manifest file.
 let SDKChecksum = "dda0102e6cbd21cb5b414178c9d14def9819a76702e047a0cd46fdb4782fc00b"
-let SDKMediaNoVideoCodecsChecksum = "aab11dc64577672701b6c9849ab49d16c0e7bd3b0da4963863cc4dc8441f831b"
+let SDKMediaNoVideoCodecsChecksum = "47d9599cc66919a1fcb2a13631b0368f4c8a6012792f5edfc1bdaeb9f8e89fb0"
 let SDKMachineLearningChecksum = "d79e15d11b24ee53219a0c02963e60c4b56cd2f4d121bf8d40c3fe3068a14a9d"
 
 let package = Package(
