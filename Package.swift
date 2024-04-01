@@ -18,7 +18,7 @@ let package = Package(
     name: "AmazonChimeSDK",
     products: [
         .library(name: "AmazonChimeSDK", targets: ["AmazonChimeSDK", "AmazonChimeSDKMedia"]),
-        .library(name: "AmazonChimeSDKMedia", type: .dynamic, targets: ["AmazonChimeSDKMedia"]),
+        .library(name: "AmazonChimeSDKMedia", targets: ["AmazonChimeSDKMedia"]),
         .library(name: "AmazonChimeSDKMachineLearning", targets: ["AmazonChimeSDKMachineLearning"])
     ],
     targets: [
