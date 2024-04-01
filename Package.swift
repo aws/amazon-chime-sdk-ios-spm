@@ -19,7 +19,7 @@ let package = Package(
     products: [
         .library(name: "AmazonChimeSDK", targets: ["AmazonChimeSDK", "AmazonChimeSDKMedia"]),
         .library(name: "AmazonChimeSDKMedia", targets: ["AmazonChimeSDKMedia"]),
-        .library(name: "AmazonChimeSDKMachineLearning", targets: ["AmazonChimeSDKMachineLearning"])
+        .executable(name: "AmazonChimeSDKMachineLearning",  targets: ["AmazonChimeSDKMachineLearning"])
     ],
     targets: [
         .binaryTarget(
