@@ -2,16 +2,16 @@
 import PackageDescription
 
 // Current stable version of the Amazon Chime SDK for iOS
-let SDKVersion = "0.26.0"
-let SDKMediaVersion = "0.22.0"
+let SDKVersion = "0.26.1"
+let SDKMediaVersion = "0.23.0"
 let SDKMachineLearningVersion = "0.3.1"
 
 // Hosting url where the release artifacts are hosted.
 let hostingUrl = "https://amazon-chime-sdk-ios.s3.amazonaws.com"
 
 // Checksums for SDKs to verify that the hosted archive file matches the archive declared in the manifest file.
-let SDKChecksum = "49da60696938d8994fdb55015d2b240893daa0294599c5fbe8a33a2774cb60b7"
-let SDKMediaChecksum = "0f37d5b952bd48927b93d4c6f89655276198fe4670446659922277e01cd3ecd9"
+let SDKChecksum = "326c39c5f8f8e228089d416a8255dda3b60b669c2fbefaff9bac33668256e0a9"
+let SDKMediaChecksum = "694f0d62db51e6506c1c9a9f4c66be75a291509ce24f4609de0a1bcccd24746e"
 let SDKMachineLearningChecksum = "d0968e47808f5c1a8b83b7383d9a76435eecf018d3b7aa2aa8a65205d212f31c"
 
 let package = Package(
