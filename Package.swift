@@ -19,7 +19,13 @@ let package = Package(
     products: [
         .library(name: "AmazonChimeSDK", targets: ["AmazonChimeSDK", "AmazonChimeSDKMedia"]),
         .library(name: "AmazonChimeSDKMedia", targets: ["AmazonChimeSDKMedia"]),
-        .library(name: "AmazonChimeSDKMachineLearning", targets: ["AmazonChimeSDKMachineLearning"])
+        .library(
+            name: "AmazonChimeSDKMachineLearning",
+            targets: [
+                "AmazonChimeSDKMachineLearning",
+                "AmazonChimeSDKMachineLearningCoreMLLinker"
+            ]
+        )
     ],
     targets: [
         .binaryTarget(
@@ -36,6 +42,13 @@ let package = Package(
             name: "AmazonChimeSDKMachineLearning",
             url: "\(hostingUrl)/machine-learning/\(SDKMachineLearningVersion)/spm/AmazonChimeSDKMachineLearning-\(SDKMachineLearningVersion).zip",
             checksum: SDKMachineLearningChecksum
+        ),
+        .target(
+            name: "AmazonChimeSDKMachineLearningCoreMLLinker",
+            dependencies: ["AmazonChimeSDKMachineLearning"],
+            linkerSettings: [
+                .linkedFramework("CoreML", .when(platforms: [.iOS]))
+            ]
         )
     ]
 )
